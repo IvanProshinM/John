@@ -422,6 +422,10 @@
 
     .menu-burger__item {
         margin-top: 20px;
+        text-decoration: none;
+    }
+    .menu-burger__item:hover {
+        color: #FF6464;
     }
 
     .main-part__intro {
@@ -458,6 +462,7 @@
 
     .recent__post {
         flex-wrap: wrap;
+        margin: 2% ;
     }
 
     .recent__head {

@@ -1,0 +1,165 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+
+.wrapper_blue {
+    background-color: #EDF7FA;
+}
+
+.content_container {
+    max-width: 858px;
+    margin: 0 auto;
+}
+
+
+.header {
+    max-width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    font-family: "heebo_bold", sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    padding: 33px 0 33px 36px;
+}
+.menu__item:hover {
+    color: #FF6464;
+}
+
+.menu-burger__items {
+    display: none;
+}
+
+
+.menu-burger {
+    display: none;
+}
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+
+
+}
+
+.footer__logos {
+    justify-content: center;
+    display: flex;
+
+}
+
+.logos__item {
+    padding-left: 35px;
+}
+
+._first {
+    padding-left: 0;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-family: "heebo_regular", sans-serif;
+    font-size: 14px;
+    padding-top: 5%;
+}
+@media (max-width: 500px) {
+
+    ._header {
+        max-width: 375px;
+
+    }
+
+    .content_container {
+        max-width: 375px;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .menu-burger span {
+        position: absolute;
+        background-color: black;
+        width: 30px;
+        height: 2px;
+        top: 9px
+    }
+
+    .menu-burger:after,
+    .menu-burger:before {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+    }
+
+    .menu-burger:after {
+        top: 0;
+    }
+
+    .menu-burger:before {
+        bottom: 0;
+    }
+    .menu-burger.active span {
+        transform: scale(0);
+    }
+    .menu-burger.active:before {
+        transform:rotate(45deg);
+        bottom: 10px;
+    }
+    .menu-burger.active:after {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    .menu-burger__items {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        margin-right: 5%;
+        font-family: "heebo_bold", sans-serif;
+        font-size: 20px;
+        right: 8%;
+        height: 700px;
+    }
+
+    .menu-burger__items.active {
+        display: flex;
+    }
+
+    .menu-burger__item {
+        margin-top: 20px;
+    }
+
+
+
+    .footer__content {
+        padding-top: 30%;
+    }
+
+    .footer__copyright {
+        padding-top: 10%;
+    }
+}

@@ -31,6 +31,7 @@
 
 .menu__item {
     padding: 33px 0 33px 36px;
+    text-decoration: none;
 }
 .menu__item:hover{
     color: #FF6464;

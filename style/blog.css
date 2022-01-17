@@ -72,6 +72,55 @@
     font-size: 14px;
     padding-top: 5%;
 }
+.blog__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+.blog__title {
+    font-family: "heebo_bold",sans-serif;
+    font-size: 44px;
+}
+.recent__post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+
+}
+
+.post__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+   /* padding: 4.5% 3% 4.5% 0;*/
+    margin-bottom: 4%;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 4%;
+}
+
+.item__title {
+    font-family: "heebo_bold", sans-serif;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.item__up-text {
+    font-family: "heebo_regular", sans-serif;
+    font-size: 18px;
+    padding: 2% 0 2% 0;
+}
+
+.item__low-text {
+    font-family: "heebo_regular", sans-serif;
+    font-size: 16px;
+    width: 75%;
+    line-height: 23.5px;
+
+}
+.opacity_text {
+    color: #8695A4;
+}
 @media (max-width: 500px) {
 
     ._header {
